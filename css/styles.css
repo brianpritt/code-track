@@ -1,4 +1,4 @@
-#question1, #question2, #question3, #question4, #question5, #tracks{
+#question1, #question2, #question3, #question4, #question5, #tracks, .track-info{
   display: none;
   margin: 5% 30%;
   padding: 10px;
@@ -7,38 +7,27 @@
   background-color: rgba(0,0,0,.4);
   color:
 }
-.links{
-  text-align: center;
-  font-size: 1.1em
-  
-}
-.links a{
-  margin: 5px 10px 5px 10px;
-}
 
 body{
-  /*margin:3% 10% 10% 3%;*/
   font-family: sans-serif;
-  background-image: url("../img/background.jpg");
-
+  background-image: url("../img/bg1.jpg");
   background-repeat: no-repeat;
-
   background-color: #000;
   background-attachment: fixed;
   background-size: cover;
   margin: 1% 2%;
 }
-.get-started{
+
+.links{
   text-align: center;
+  font-size: 1.5em;
+  bottom:0;
 }
-.main-header{
-  margin-top:10px;
-  text-align: center;
-  font-size: 2.1em;
+
+.links a{
+  margin: 5px 10px 5px 10px;
 }
-.main-text p{
-  font-size:1.1em;
-}
+
 .jumbotron{
   color:white;
   text-align: center;
@@ -47,4 +36,29 @@ body{
   margin-top: 10px;
   padding-top:7px;
   padding-bottom:7px;
+}
+
+.get-started{
+  text-align: center;
+}
+
+.main-header{
+  margin-top:10px;
+  text-align: center;
+  font-size: 2.1em;
+}
+
+.main-text p{
+  font-size:1.1em;
+}
+#tracks h4{
+  text-align: center;
+}
+.track-info {
+  margin-top:-60px;
+  text-align: center;
+
+}
+h5 button{
+  color:black;
 }

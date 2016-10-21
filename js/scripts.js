@@ -6,6 +6,7 @@ var csharpCounter = 0;
 var javaCounter = 0;
 //end global variables//
 
+//LOGIC//
 var theAdder = function(value1, value2, value3, value4, value5){
   if (parseInt(value1)===1){
     csharpCounter+=1;
@@ -43,7 +44,9 @@ var theAdder = function(value1, value2, value3, value4, value5){
     phpCounter+=1;
   }
 }
-//Start main code //
+
+//Start main code - BUSINESS //
+  //the following goes through each question and hides it after completion
 $(document).ready(function(event){
   $(".get-started").click(function(event){
      $(".get-started").hide();
@@ -72,8 +75,6 @@ $(document).ready(function(event){
       event.preventDefault();
     });
 
-
-
   $("form").submit(function(event){
     $("#question5").hide();
     var q1Input = $("input:radio[name=question1]:checked").val();
@@ -81,12 +82,13 @@ $(document).ready(function(event){
     var q3Input = $("input:radio[name=question3]:checked").val();
     var q4Input = $("input:radio[name=question4]:checked").val();
     var q5Input = $("input:radio[name=question5]:checked").val();
-
+    //call function to tally up score
     theAdder(q1Input, q2Input,q3Input,q4Input,q5Input);
-
+    //show final results
     $("#tracks").show();
-
-    $("#tracks h5").after("<h4>CSS: "+cssCounter+"</h4><h4>PHP: "+phpCounter+"</h4><h4>Ruby: "+rubyCounter+"</h4><h4>C#: "+csharpCounter+"</h4><h4>Java: "+javaCounter+"</h4>");
+    $(".track-info").show()
+    //adds the variables inline to the html
+    $("#tracks h5").after("<h4>CSS/Design: "+cssCounter+"</h4><h4>PHP/Drupal: "+phpCounter+"</h4><h4>Ruby/Rails: "+rubyCounter+"</h4><h4>C#.NET: "+csharpCounter+"</h4><h4>Java/Android : "+javaCounter+"</h4>");
 
 
 

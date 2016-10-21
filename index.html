@@ -9,34 +9,34 @@
   </head>
   <body>
     <div class="links">
-
       <a href="http://www.epicodus.com/php">php</a>
       <a href="http://www.epicodus.com/ruby">ruby</a>
       <a href="http://www.epicodus.com/c-sharp">C#</a>
       <a href="http://www.epicodus.com/java">Java</a>
       <a href="http://www.epicodus.com/css">CSS/Design</a>
     </div>
-    <div class="container-fluid ">
 
+    <div class="container-fluid">
       <div class="jumbotron">
         <h2 class="main-header">Learn to Program</h2>
         <div class="main-text">
+          <hr>
         <p>
-          This survey will help you choose which programming languges you are most likely to enjoy.  The higher the number, the more likely you will like that lifestyle that comes with it.
+          This survey will help you choose which programming languges you are most likely to enjoy.  The higher the number, the more likely you will like the lifestyle that comes with it.
         </p>
       </div><!--end main text -->
-  </div><!--end jumbotron-->
+      </div><!--end jumbotron-->
 
       <form><!--section for asking questions-->
-      <div class="get-started"><!--get started button  -->
-          <button type="submit" class="btn">Let's Get Started!</button>
-      </div> <!--end get started button-->
+        <div class="get-started"><!--get started button  -->
+            <button type="submit" class="btn">Let's Get Started!</button>
+        </div> <!--end get started button-->
 
         <div id="question1">
           <h4>What type of work environment do you prefer?</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="question1" value="1">
+              <input type="radio" name="question1" value="1" checked>
               Corporate/Interprise
             </label>
           </div>
@@ -47,15 +47,13 @@
             </label>
           </div>
           <h5><button type="submit">Next</button><h5>
-
         </div> <!--end question1-->
-
 
         <div id="question2">
           <h4>Do you prefer to working with the inner working of things, or would you rather make them look nice?</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="1">
+              <input type="radio" name="question2" value="1" checked>
               Behind the Scenes
             </label>
           </div>
@@ -72,7 +70,7 @@
           <h4>Do you like to work from home?</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="1">
+              <input type="radio" name="question3" value="1" checked>
               Yes
             </label>
           </div>
@@ -89,7 +87,7 @@
           <h4>Do you like the idea of building websites?</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="1">
+              <input type="radio" name="question4" value="1" checked>
               Yes
             </label>
           </div>
@@ -109,17 +107,17 @@
         </div> <!--end question4-->
 
         <div id="question5">
-          <h4>If you had to choose between ... which would it be?</h4>
+          <h4>If you had to choose between user interface or logic which would it be?</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="question5" value="1">
-              this
+              <input type="radio" name="question5" value="1" checked>
+              User Interface
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="1">
-                that
+                Logic
             </label>
           </div>
           <button type="submit" class="btn">Find your match!</button>
@@ -127,10 +125,21 @@
       </form> <!--End Questions section-->
 
       <div id="tracks">
-        <h5></h5>
-        
+        <h4>Your Results!</h4>
+        <hr>
+        <h5><!--Text will be inputted here --></h5>
       </div> <!--end tracks section-->
-
+      <div class="track-info">
+        <p>
+          At the top of the screen there are links to brief descriptions of each language on the Epicodus website, find the one you scored highest on and read more!
+        </p>
+        <p>
+          Good Luck and Happy Programming!
+        </p>
+      </div>
     </div> <!--End Container-Fluid -->
   </body>
+  <footer>
+
+  </footer>
 </html>
