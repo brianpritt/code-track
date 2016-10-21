@@ -2,20 +2,31 @@
   display: none;
   margin: 5% 30%;
   padding: 10px;
-  border:3px solid gray;
+  color:white;
   border-radius: 4%;
+  background-color: rgba(0,0,0,.4);
+  color:
 }
 .links{
-
+  text-align: center;
+  font-size: 1.1em
+  
+}
+.links a{
+  margin: 5px 10px 5px 10px;
 }
 
 body{
-  margin:3% 10% 10% 3%;
-  background-color: lightblue;
+  /*margin:3% 10% 10% 3%;*/
   font-family: sans-serif;
   background-image: url("../img/background.jpg");
-  
+
   background-repeat: no-repeat;
+
+  background-color: #000;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 1% 2%;
 }
 .get-started{
   text-align: center;
@@ -29,9 +40,11 @@ body{
   font-size:1.1em;
 }
 .jumbotron{
+  color:white;
   text-align: center;
   padding: 3;
-  background-color: grey;
+  background-color: rgba(0,0,0,.4);
+  margin-top: 10px;
   padding-top:7px;
   padding-bottom:7px;
 }
