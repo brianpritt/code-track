@@ -43,12 +43,11 @@ var theAdder = function(value1, value2, value3, value4, value5){
     phpCounter+=1;
   }
 }
-var theResults = function(){
-
-}
+//Start main code //
 $(document).ready(function(event){
   $(".get-started").click(function(event){
      $(".get-started").hide();
+     $(".panel").show();
      $("#question1").show();
      event.preventDefault();
    });
@@ -72,13 +71,11 @@ $(document).ready(function(event){
       $("#question5").show();
       event.preventDefault();
     });
-    $("#question1 h5").click(function(event){
-      $("#question5").hide();
-      $("#question2").show();
-      event.preventDefault();
-    });
+
+
 
   $("form").submit(function(event){
+    $("#question5").hide();
     var q1Input = $("input:radio[name=question1]:checked").val();
     var q2Input = $("input:radio[name=question2]:checked").val();
     var q3Input = $("input:radio[name=question3]:checked").val();
@@ -86,9 +83,10 @@ $(document).ready(function(event){
     var q5Input = $("input:radio[name=question5]:checked").val();
 
     theAdder(q1Input, q2Input,q3Input,q4Input,q5Input);
-    var yourLanguage = theResults();
-    alert(cssCounter);
-    alert(phpCounter);
+
+    $("#tracks").show();
+    $("#tracks h5").after("<h4>CSS: "+cssCounter+"</h4><h4>PHP: "+phpCounter+"</h4><h4>Ruby: "+rubyCounter+"</h4><h4>C#: "+csharpCounter+"</h4><h4>Java: "+javaCounter+"</h4>");
+
 
 
     event.preventDefault();

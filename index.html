@@ -5,19 +5,31 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-
     <title>Code Track</title>
   </head>
   <body>
-    <h4>Learn to Program</h4>
+    <div class="links">
+      <a href="#">php</a>
+      <a href="#">ruby</a>
+      <a href="#">C#</a>
+      <a href="#">Java</a>
+      <a href="#">CSS/Design</a>
+    </div>
     <div class="container-fluid ">
-      <p>
-        Today, many people are turning to the world of Web development for their career path.  To some, it may just come naturally. To others, there may be a bit tooth gnashing to get the basics down.  One thing that many people have trouble with, is which path to choose when going to coding school.  Most people will tell you that you will likely not always use the languages you learned in school, it still helps to find one you are most comfortable with.  Take our survey, and see what we think best matches you.
-      </p>
+
+      <div class="jumbotron">
+        <h2 class="main-header">Learn to Program</h2>
+        <div class="main-text">
+        <p>
+          This survey will rate which
+        </p>
+      </div><!--end main text -->
+  </div><!--end jumbotron-->
+
       <form><!--section for asking questions-->
       <div class="get-started"><!--get started button  -->
           <button type="submit" class="btn">Let's Get Started!</button>
-        </div> <!--end get started button-->
+      </div> <!--end get started button-->
 
         <div id="question1">
           <h4>What type of work environment do you prefer?</h4>
@@ -33,9 +45,10 @@
               Startup/Ground up
             </label>
           </div>
-          <h5>Next<h5>
+          <h5><button type="submit">Next</button><h5>
 
         </div> <!--end question1-->
+
 
         <div id="question2">
           <h4>Do you prefer to working with the inner working of things, or would you rather make them look nice?</h4>
@@ -51,7 +64,7 @@
               Organizing and decorating
             </label>
           </div>
-          <h5>Next</h5>
+          <h5><button type="submit">Next</button></h5>
         </div> <!--end question2-->
 
         <div id="question3">
@@ -68,7 +81,7 @@
               No
             </label>
           </div>
-          <h5>Next</h5>
+          <h5><button type="submit">Next</button></h5>
         </div> <!--end question3-->
 
         <div id="question4">
@@ -90,9 +103,8 @@
               <input type="radio" name="question4" value="3">
               Yes, but I would like to do more.
             </label>
-
           </div>
-          <h5>Next</h5>
+          <h5><button type="submit">Next</button></h5>
         </div> <!--end question4-->
 
         <div id="question5">
@@ -111,27 +123,16 @@
           </div>
           <button type="submit" class="btn">Find your match!</button>
         </div> <!--end question5-->
-
       </form> <!--End Questions section-->
 
-      <div class="tracks">
-        <div class="css-design">
-        </div><!--end css-design-->
+      <div id="tracks">
+        <h5></h5>
 
-        <div class="c-dotnet">
-        </div><!--end c-donet-->
 
-        <div class="ruby-rails">
-        </div><!--end ruby-rails-->
 
-        <div class="php-drupal">
-        </div><!--end php-drupal-->
-
-        <div class="java-android">
-        </div><!--end java-android-->
 
       </div> <!--end tracks section-->
-
+      <hr>
     </div> <!--End Container-Fluid -->
   </body>
 </html>
